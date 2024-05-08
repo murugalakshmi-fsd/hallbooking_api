@@ -11,8 +11,8 @@ const hallSchema = new Schema({
        type:Number,
        required:true
     },
-    location:{
-        type:String,
+    availability:{
+        type:Number,
         required:true
     }
 });

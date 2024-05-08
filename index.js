@@ -17,6 +17,9 @@ app.use(logger);
 const mongoURL=process.env.MONGO_URL;
 connectToDatabase(mongoURL);
 
+app.get('/', (req, res) => {
+    res.send('Hello World');
+  });
 app.use("/",router);
 
 const PORT = process.env.PORT||8000;
