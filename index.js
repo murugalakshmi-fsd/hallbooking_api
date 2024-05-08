@@ -20,7 +20,7 @@ connectToDatabase(mongoURL);
 app.get('/', (req, res) => {
     res.send('Hello World');
   });
-app.use("/",router);
+app.use("/booking",router);
 
 const PORT = process.env.PORT||8000;
 app.listen(PORT,()=>{
